@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BottomMenuItemView" customModule="ktb_next_exam" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="nyd-A8-jNK" id="ZFZ-Qk-t2k"/>
+                <outlet property="titleLabel" destination="ofg-OY-iEr" id="dxF-VC-iWz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="uY4-5i-vIa">
+            <rect key="frame" x="0.0" y="0.0" width="83" height="67"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ne-gO-Kml">
+                    <rect key="frame" x="0.0" y="0.0" width="83" height="67"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_home" translatesAutoresizingMaskIntoConstraints="NO" id="nyd-A8-jNK">
+                            <rect key="frame" x="25" y="0.0" width="33" height="33"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="nyd-A8-jNK" secondAttribute="height" multiplier="1:1" id="PNt-RX-0bb"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="หน้าหลัก" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofg-OY-iEr">
+                            <rect key="frame" x="0.0" y="37" width="83" height="22"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ofg-OY-iEr" secondAttribute="bottom" constant="8" id="53m-ek-zqp"/>
+                        <constraint firstItem="nyd-A8-jNK" firstAttribute="width" secondItem="1ne-gO-Kml" secondAttribute="width" multiplier="0.4" id="7NW-8e-1yP"/>
+                        <constraint firstItem="nyd-A8-jNK" firstAttribute="centerX" secondItem="1ne-gO-Kml" secondAttribute="centerX" id="dwJ-Tx-En7"/>
+                        <constraint firstItem="ofg-OY-iEr" firstAttribute="leading" secondItem="1ne-gO-Kml" secondAttribute="leading" id="fdm-ah-d1r"/>
+                        <constraint firstAttribute="trailing" secondItem="ofg-OY-iEr" secondAttribute="trailing" id="loF-Yd-Lxa"/>
+                        <constraint firstItem="ofg-OY-iEr" firstAttribute="top" secondItem="nyd-A8-jNK" secondAttribute="bottom" constant="4" id="sH1-xK-vRr"/>
+                        <constraint firstItem="nyd-A8-jNK" firstAttribute="top" secondItem="1ne-gO-Kml" secondAttribute="top" id="zPF-ir-ZR9"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="irn-D9-nJb"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="1ne-gO-Kml" secondAttribute="bottom" id="L9R-cK-THg"/>
+                <constraint firstItem="irn-D9-nJb" firstAttribute="trailing" secondItem="1ne-gO-Kml" secondAttribute="trailing" id="R6n-Mf-Ndc"/>
+                <constraint firstItem="1ne-gO-Kml" firstAttribute="leading" secondItem="irn-D9-nJb" secondAttribute="leading" id="h67-Q2-f1d"/>
+                <constraint firstAttribute="top" secondItem="1ne-gO-Kml" secondAttribute="top" id="wE0-wR-pav"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-400.72463768115944" y="-104.12946428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_home" width="30" height="30"/>
+    </resources>
+</document>
